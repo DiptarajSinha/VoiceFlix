@@ -9,7 +9,7 @@ const movieContainer = document.getElementById('movie-results');
 const modalOverlay = document.getElementById('modal-overlay');
 const guideText = document.getElementById('guide-text');
 
-const TMDB_KEY = '5348b46c982c351bef0f233ac2f5eb6f';
+const TMDB_KEY = 'REPLACE_ME_ON_VERCEL';
 const IMG_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 
 // CONTEXTUAL GUIDE LOGIC
@@ -164,4 +164,5 @@ document.body.onclick = () => {
     startVisualizer();
     statusText.innerText = "System Active";
     speak("Voice system activated.");
+
 };
