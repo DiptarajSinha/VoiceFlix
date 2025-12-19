@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>VoiceFlix | Context-Aware UI</title>
+</head>
+
+<body>
+    <div id="status-container">
+        <h1 style="color:var(--netflix-red); font-style:italic; letter-spacing:-2px; font-size: 3rem; margin: 0;">
+            VOICEFLIX</h1>
+        <p id="status">Click anywhere to start</p>
+        <p id="transcript" style="color:#666; font-size:0.9rem; min-height: 1.2rem;"></p>
+    </div>
+
+    <div id="orb-container">
+        <div id="orb">
+            <svg width="45" height="45" fill="white" viewBox="0 0 24 24">
+                <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" />
+                <path
+                    d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" />
+            </svg>
+        </div>
+    </div>
+
+    <div id="movie-results" class="hidden"></div>
+
+    <div id="modal-overlay" class="hidden">
+        <div id="modal-card">
+            <div id="modal-content"></div>
+            <p style="color: #666; font-size: 0.8rem; margin-top: 15px;">Say "Close" to exit</p>
+        </div>
+    </div>
+
+    <div id="voice-guide">
+        <span id="guide-text">Try saying: "Hello"</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
